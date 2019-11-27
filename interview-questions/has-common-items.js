@@ -29,21 +29,30 @@ const case2 = {
 
 // Optimized solution
 
-const has_common_items_opt = (arr1, arr2) => {
-    let m = new Map();
-    z = [...arr1, ...arr2] // O(n)
-    for(i=0; i< z.length; i++){ // O(m)
-        if(m.has(z[i])){
-            return true
-        }
-        else{
-            m.set(z[i])
-        }
-    }
-    return false
+// const has_common_items_opt = (arr1, arr2) => {
+//     let m = new Map();
+//     z = [...arr1, ...arr2] // O(n)
+//     for(i=0; i< z.length; i++){ // O(m)
+//         if(m.has(z[i])){
+//             return true
+//         }
+//         else{
+//             m.set(z[i])
+//         }
+//     }
+//     return false
+// }
+
+// // TIme complexity = O(n+m)
+
+// console.log(has_common_items_opt(case1.a, case1.b))
+// console.log(has_common_items_opt(case2.a, case2.b))
+
+
+// ES6 way
+const has_common_items_es6 = (arr1, arr2) => {
+    return arr1.some(e => arr2.includes(e))
 }
 
-// TIme complexity = O(n+m)
-
-console.log(has_common_items_opt(case1.a, case1.b))
-console.log(has_common_items_opt(case2.a, case2.b))
+console.log(has_common_items_es6(case1.a, case1.b))
+console.log(has_common_items_es6(case2.a, case2.b))
