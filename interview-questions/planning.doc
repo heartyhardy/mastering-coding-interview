@@ -1,0 +1,23 @@
+Problem statement
+
+Given two arrays, write a function that notifies the user if they have any
+common items.
+
+Assumptions:
+1. Not empty
+2. May contain repeating items
+
+case 1:
+
+a = [a, b, c, d]
+b = [x, y, z, f]
+
+Result: NO
+
+case 2:
+
+a = [a, b, c, d]
+b = [n, i, j, c]
+
+Result: YES
+

@@ -1,0 +1,11 @@
+{
+  "name": "master-the-coding-interview-data-structures-algorithms",
+  "version": "1.0.0",
+  "description": "All the playground files related to the course",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charith",
+  "license": "MIT"
+}
