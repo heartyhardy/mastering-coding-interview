@@ -42,4 +42,28 @@
 
 1. When the BST is **unbalanced** all the operations become **`O(n)`**
 
+### Operations
+
+#### Insert
+
+* When **Inserting**...
+    * If Root does not exist, create it.
+    * If it does, compare its value with the inserting value and decide which side to go, Left or Right.
+    * Loop until current node in the loop is null and insert the node.
+
+* When **Lookup**...
+    * Loop while comparing the value with the current node's value in the loop. If equals return the value.
+    *  If `value > currentNode.value` go Right.
+    *  If `value < currentNode.value` go Left.
+    *  If not found return null.
+
+* When **Removing**...
+    *  See if Root exists, loop until the value is found. Use comparison.
+    *  If node to be removed **does not have children**, simply delete it by setting the pointer to null.
+    *  If node to be removed has **one child**, copy the child values to the node to be removed, including pointers. Set the child node to nil if it doesnt have children itself.
+    *  If node to be deleted has **two children** **go right and find the minimum left value**.
+    *  Once found, set it's value to destination value and replace the pointers accordingly.
+    
+    [Removing a node from a Binaray Search Tree](http://www.algolist.net/Data_structures/Binary_search_tree/Removal)
+
 
