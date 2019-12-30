@@ -39,3 +39,11 @@
         [0, 0, 1, 0]
     ]
   ```
+###Pros and COns
+
+* **Pros**
+  * Can maintain relationships
+
+* **Cons**
+  * Hard to scale
+  
