@@ -14,6 +14,7 @@ Recursion is great for **solving tasks which have repeated sub-tasks within them
 
 1. Can be difficut to understand at first.
 2. Can cause **stack overflow** if not careful.
+3. Anything that can be implemented with recursion, CAN be implemented with loops.
 
 ####Stack overflow
 
@@ -43,3 +44,15 @@ A recursive function has two parts.
     }
 ```
 **Tip** Always remeber to `return` so the return values **bubbles up** the stack when its finished.
+
+#### Why would you ever use recursion?
+
+* Easier to read, due to clean code.
+* **DRY** principle can be preserved with recursion
+* In **Tree** data structures, it is easy to use recursion where you dont know a loop count.
+* Its easy to use recursion in **BFS and DFS**.
+* Used in **Divide and Conquer** situations.
+
+#### Optimizations
+
+* Read more about **Tail call optimization**
