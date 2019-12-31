@@ -33,3 +33,28 @@ func bubblesort(nums []int) {
 	}
 }
 ```
+
+**Descending, Optimized**
+
+```go
+func bubblesortDesc(nums []int) {
+	i, l, swp := 0, len(nums)-1, false
+	for {
+		if nums[i] < nums[i+1] {
+			t := nums[i]
+			nums[i] = nums[i+1]
+			nums[i+1] = t
+			swp = true
+		}
+		if i == l-1 && swp {
+			l--
+			i = 0
+			swp = false
+			continue
+		} else if i == l && !swp {
+			break
+		}
+		i++
+	}
+}
+```
