@@ -56,3 +56,11 @@ A recursive function has two parts.
 #### Optimizations
 
 * Read more about **Tail call optimization**
+* Read more about **Dynamic programming**
+
+#### Applications
+
+* Merge sort
+* Quick sort
+* Tree traversal
+* Graph traversal
