@@ -64,3 +64,5 @@ A recursive function has two parts.
 * Quick sort
 * Tree traversal
 * Graph traversal
+
+[Recursion real world applications](https://stackoverflow.com/questions/105838/real-world-examples-of-recursion)
