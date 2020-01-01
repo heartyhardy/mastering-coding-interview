@@ -13,23 +13,23 @@ Bubbling up the largest value via multiple passes, hence the name "Bubble Sort"
 **Optimized solution**
 ```go
 func bubblesort(nums []int) {
-	swapped, passes, curpass := false, len(nums)-1, 0
-	for {
-		if nums[curpass] > nums[curpass+1] {
-			tmp := nums[curpass]
-			nums[curpass] = nums[curpass+1]
-			nums[curpass+1] = tmp
-			swapped = true
+	swp := false
+	l := len(nums) - 1
+	for i := 0; i < l; i++ {
+		if nums[i] > nums[i+1] {
+			t := nums[i]
+			nums[i] = nums[i+1]
+			nums[i+1] = t
+			swp = true
 		}
-		if curpass == passes-1 && swapped {
-			passes--
-			curpass = 0
-			swapped = false
-			continue
-		} else if curpass == passes && !swapped {
+		if i == l-1 && !swp {
 			break
+		} else if i == l-1 && swp {
+			l--
+			i = -1
+			swp = false
+			continue
 		}
-		curpass++
 	}
 }
 ```
@@ -37,24 +37,24 @@ func bubblesort(nums []int) {
 **Descending, Optimized**
 
 ```go
-func bubblesortDesc(nums []int) {
-	i, l, swp := 0, len(nums)-1, false
-	for {
+func bubblesort(nums []int) {
+	swp := false
+	l := len(nums) - 1
+	for i := 0; i < l; i++ {
 		if nums[i] < nums[i+1] {
 			t := nums[i]
 			nums[i] = nums[i+1]
 			nums[i+1] = t
 			swp = true
 		}
-		if i == l-1 && swp {
+		if i == l-1 && !swp {
+			break
+		} else if i == l-1 && swp {
 			l--
-			i = 0
+			i = -1
 			swp = false
 			continue
-		} else if i == l && !swp {
-			break
 		}
-		i++
 	}
 }
 ```
