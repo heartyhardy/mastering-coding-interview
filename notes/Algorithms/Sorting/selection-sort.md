@@ -2,7 +2,7 @@
 
 ## Selection sort
 
-Bubbling up the largest value via multiple passes, hence the name "Bubble Sort"
+Selection sort searches for the smallest element in the array and swapts it with the starting position.
 
 | Best | Average | Worst  | Space |
 |------|---------|--------|-------|
