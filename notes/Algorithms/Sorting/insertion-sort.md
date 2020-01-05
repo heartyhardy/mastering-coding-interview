@@ -4,6 +4,8 @@
 
 Insertion sort performs well when the target array is almost sorted. Algorithm picks an element and compares it with the elements to the left of it and inserts the source element accordingly.
 
+Note that this is a **Stable** sorting algorithm.
+
 | Best | Average | Worst  | Space |
 |------|---------|--------|-------|
 |`O(n)`|`O(n^2)` |`O(n^2)`|`O(1)` | 
