@@ -6,6 +6,8 @@ Selection sort searches for the smallest element in the array and swapts it with
 
 Note that this is an **Unstable** sorting algorithm.
 
+Selection sort is a **Comparison Sort**.
+
 | Best | Average | Worst  | Space |
 |------|---------|--------|-------|
 |`O(n^2)`|`O(n^2)` |`O(n^2)`|`O(1)` | 

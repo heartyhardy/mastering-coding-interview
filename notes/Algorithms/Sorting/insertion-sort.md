@@ -2,9 +2,11 @@
 
 ## Insertion sort
 
-Insertion sort performs well when the target array is almost sorted. Algorithm picks an element and compares it with the elements to the left of it and inserts the source element accordingly.
+Insertion sort performs well when the target array is **almost sorted** or **has few elements**. Algorithm picks an element and compares it with the elements to the left of it and inserts the source element accordingly.
 
 Note that this is a **Stable** sorting algorithm.
+
+Insertion sort is a **Comparison Sort**.
 
 | Best | Average | Worst  | Space |
 |------|---------|--------|-------|

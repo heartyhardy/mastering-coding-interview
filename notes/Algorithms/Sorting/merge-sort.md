@@ -6,6 +6,8 @@ Merge sort uses **Divide and Conquer** approach. Array is divided into single el
 
 This is a **Stable** sorting algorithm.
 
+Merge sort is a **Comparison Sort**.
+
 | Best | Average | Worst  | Space |
 |------|---------|--------|-------|
 |`O(n log n)`|`O(n log n)` |`O(n log n)`|`O(n)` | 

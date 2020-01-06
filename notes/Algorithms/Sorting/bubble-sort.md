@@ -6,6 +6,8 @@ Bubbling up the largest value via multiple passes, hence the name "Bubble Sort"
 
 Note that this is a **Stable** sorting algorithm.
 
+Bubble sort is a **Comparison Sort**.
+
 | Best | Average | Worst  | Space |
 |------|---------|--------|-------|
 |`O(n)`|`O(n^2)` |`O(n^2)`|`O(1)` | 
